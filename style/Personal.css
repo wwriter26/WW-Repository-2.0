@@ -1,0 +1,227 @@
+body{
+  color:black;
+  background-color: aliceblue;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0; /* Remove body margin */
+  padding: 0; /* Remove body padding */
+}
+hr {
+  color:white;
+  height: 1px;
+  width: 100%;
+  background-color:rgb(62, 84, 163);
+  border:none;
+  margin-top: 31px;
+  
+}
+header{
+  width: 100%;
+  margin: 0; /* Remove header margin */
+      padding: 0; /* Remove header padding */
+  
+}
+p{
+  color:white !important;
+}
+
+.header-name{
+  font-weight: bold;
+  padding-bottom: 14px;
+  color: black;
+  font-size: 18px;
+  position: relative;
+  top:10px;
+  left:23px;
+}
+.header2-name{
+  position: absolute;
+  left:5px;
+  top:19px;
+  font-size: 18px;
+}
+.header-title{
+  position: absolute;
+  left: 9.1%;
+  top: 18px;
+  font-size: 27px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* font-weight: bold; */
+  color:black;
+}
+.vertical-line{
+  position: absolute;
+  top: 0.1%;
+  bottom: 92.3%;
+  width: 1px; /* Adjust the width as desired */
+  background-color: rgb(62, 84, 163);; /* Adjust the color as desired */
+  left: 7%; /* Adjust the position as desired */
+}
+.white-line{
+  position: absolute;
+  /* top: 7.7%;
+  bottom: 90.8%;
+  width: 9px; /* Adjust the width as desired */
+  /* background-color: aliceblue; Adjust the color as desired */
+  /* left: 5.3%; Adjust the position as desired */ */
+}
+
+.internships{
+  position: absolute;
+  right:17%;
+  top:25px;
+  font-size: 15px;
+  background-color: aliceblue;
+  border:none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  cursor: pointer;
+}
+.HomePage{
+  
+  position: absolute;
+  right: 23.5%;
+  font-size: 15px;
+  top:25px;
+  background-color: aliceblue;
+  border:none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  cursor: pointer;
+}
+
+.github-link{
+  position: absolute;
+  right: 8px;
+  top:9px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family:monospace;
+  color: white;
+  background-color: black;
+  border:none;
+  cursor: pointer;
+  padding-left:25px;
+  padding-right:50px;
+  padding-top:10px;
+  padding-bottom: 10px;
+  border-radius: 50px;
+}
+.image{
+  height: 25px;
+  position: absolute;
+  top: 12px;
+  right: 13px;
+}
+
+/* Existing styles remain mostly unchanged ... */
+
+.background {
+  background-color: rgb(62, 84, 163);
+  margin: 2% auto; /* Centers the background container */
+  border-radius: 15px;
+  display: flex;
+  padding: 20px; 
+  width: 88%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+}
+
+.profile-section, .description-section {
+  padding: 20px; /* Add padding for spacing inside sections */
+}
+
+/* New styles for profile section */
+.profile-section {
+  flex: 1; /* Takes 1/3 of the container's width */
+  display: flex;
+  align-items: center; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
+  padding-right: 20px; /* Space between image and description */
+}
+
+.profile-pic {
+  max-width: 100%; /* Adjust based on your preference */
+  border-radius: 50%; /* Making the image round */
+}
+
+/* Description section styling */
+.description-section {
+  flex: 2; /* Takes 2/3 of the container's width */
+  /* Your existing styles can go here */
+}
+
+
+
+.inside-text{
+  color: white;
+  font-weight: bold;
+  position: relative;
+  top:3%;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+}
+
+.title{
+  font-size: 25px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+
+.description{
+  padding-left: 20px;
+  padding-top: 25px;
+  
+  background-color: transparent;
+  color: rgb(115, 115, 115);
+  font-family: Heebo, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+
+.slider1-3 {
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  left: 10%;
+  height: 280px; /* Adjust the height as needed */
+  background-color: rgb(240, 240, 240);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin-top: 25px; /* Add the desired top margin */
+  margin-bottom: 75px;
+  top: 25px;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+
+}
+.topics{
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+
+
+.content {
+  position: absolute;
+  top: 0;
+  left: -100%; /* Initially hide the content outside the slider */
+  width: 100%;
+  height: 100%;
+  background-color: rgb(62, 84, 163); /* Adjust the background color as needed */
+  transition: left 2s ease-in-out; /* Control the sliding animation */
+  color: white;
+}
+
+
+.content p {
+  margin: 0;
+  padding: 10px;
+  color: black; /* Adjust the text color as needed */
+}
+
+.headerTopic{
+  font-weight: bold;
+}

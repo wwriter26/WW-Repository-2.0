@@ -1,0 +1,250 @@
+body{
+  color:black;
+  background-color: aliceblue;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0; /* Remove body margin */
+  padding: 0; /* Remove body padding */
+  
+}
+hr {
+  color:white;
+  height: 1px;
+  width: 100%;
+  background-color:rgb(62, 84, 163);
+  border:none;
+  margin-top: 31px;
+  
+}
+header{
+  width: 100%;
+  margin: 0; /* Remove header margin */
+      padding: 0; /* Remove header padding */
+  
+}
+
+.header-name{
+  font-weight: bold;
+  padding-bottom: 14px;
+  color: black;
+  font-size: 18px;
+  position: relative;
+  top:10px;
+  left:23px;
+}
+.header2-name{
+  position: absolute;
+  left:5px;
+  top:19px;
+  font-size: 18px;
+}
+.header-title{
+  position: absolute;
+  left: 9.1%;
+  top: 18px;
+  font-size: 27px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* font-weight: bold; */
+  color:black;
+}
+.vertical-line{
+  position: absolute;
+  top: 0.1%;
+  bottom: 92.3%;
+  width: 1px; /* Adjust the width as desired */
+  background-color: rgb(62, 84, 163);; /* Adjust the color as desired */
+  left: 7%; /* Adjust the position as desired */
+}
+.white-line{
+  position: absolute;
+  /* top: 7.7%;
+  bottom: 90.8%;
+  width: 9px; /* Adjust the width as desired */
+  /* background-color: aliceblue; Adjust the color as desired */
+  /* left: 5.3%; Adjust the position as desired */ */
+}
+
+.about-me{
+  position: absolute;
+  right: 24%;
+  font-size: 15px;
+  top:25px;
+  background-color: aliceblue;
+  border:none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  cursor: pointer;
+}
+.internships{
+  position: absolute;
+  right:17%;
+  top:25px;
+  font-size: 15px;
+  background-color: aliceblue;
+  border:none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  cursor: pointer;
+}
+
+.github-link{
+  position: absolute;
+  right: 8px;
+  top:9px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family:monospace;
+  color: white;
+  background-color: black;
+  border:none;
+  cursor: pointer;
+  padding-left:25px;
+  padding-right:50px;
+  padding-top:10px;
+  padding-bottom: 10px;
+  border-radius: 50px;
+}
+.image{
+  height: 25px;
+  position: absolute;
+  top: 12px;
+  right: 13px;
+}
+
+.background{
+  background-color:rgb(62, 84, 163);
+  margin-top: 4%;
+  margin-left: 9%;
+  margin-right: 9%;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: grid;
+  place-items: center;
+  height: 40vh; /* Adjust to your needs */
+
+}
+.project-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Adjust this to make it two columns */
+  gap: 1em;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  row-gap: 0;
+  gap: 14em; /* adjust to create horizontal and vertical distance between projects */
+}
+
+.inside-text {
+  color: white;
+  font-weight: bold;
+  position: relative;
+  top: 20%;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.project-box-1 {
+  background-color: rgb(219, 229, 230);
+  width: 470px;
+  height: 350px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 0; /* Background layer */
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+.project-box-1-1{
+  background-color: white;
+  margin-top: -16px;
+  height: 350px;
+
+  border: 1px solid black;
+  
+
+  
+}
+
+.background-image {
+  height: 400px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  top: -50px;
+  z-index: 1; /* Image layer - higher value to ensure it's in front */
+}
+
+
+.image-1 {
+  width: 75%;
+  height: 300px;
+  position: relative;
+  left: 50%;
+  top: 6%;
+  transform: translateX(-50%);
+  transition: transform 0.5s ease;
+  z-index: 2; /* This ensures the image-1 is in front of the background-image if they overlap */
+}
+
+/* Additional CSS if you have more than one .project-box-1 and want them spaced evenly */
+.projects-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.project-box-1:hover .image-1 {
+  transform: translate(-50%, -1%) scale(1.08); /* Adjust the transform property */
+}
+
+.title{
+  font-size: 25px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.title:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.languages{
+  background-color: transparent;
+    font-family: Barlow, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    white-space: nowrap;
+    padding-left: 20px;
+    padding-top: 25px;
+
+}
+.languages > div {
+  display: inline; /* Display the elements inline */
+  margin-right: 10px; /* Add some spacing between elements */
+}
+.html{
+  color: rgb(106, 190, 205);
+  
+}
+.js{
+  color: rgb(62, 84, 163)
+}
+.css{
+  color: rgb(207, 99, 144);
+}
+.description{
+  padding-left: 20px;
+  padding-top: 25px;
+  
+  background-color: transparent;
+  color: rgb(115, 115, 115);
+  font-family: Heebo, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
